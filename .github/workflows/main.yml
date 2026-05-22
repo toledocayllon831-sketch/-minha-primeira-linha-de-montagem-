@@ -5,7 +5,7 @@ on:
     branches: [ main ]
 
 jobs:
-build-e-teste:
+  build-e-teste:
     runs-on: ubuntu-latest
 
     steps:
@@ -13,8 +13,7 @@ build-e-teste:
         uses: actions/checkout@v3
 
       - name: 2. Estação de Build (Montagem)
-         run: echo "Construindo o projeto... Verificando se todas as peças se encaixam!"
+        run: echo "Construindo o projeto... Verificando se todas as peças se encaixam!"
 
       - name: 3. Estação de Teste (Controle de Qualidade)
         run: echo "Rodando os testes automatizados... Verificando se a porta abre e fecha!"
-
